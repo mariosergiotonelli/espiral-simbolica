@@ -1,12 +1,12 @@
 {
-  "name": "brweek18",
-  "version": "100.0.1",
-  "description": "mais uma atualização do thema",
+  "name": "Espiral Simbolica",
+  "version": "1.0",
+  "description": "Inicio do trabalho",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "escame",
+  "author": "Mario",
   "license": "ISC",
   "devDependencies": {
     "animate.css": "^3.7.0",

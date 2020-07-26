@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Atividades */
+/*Template name: espiral-simbolica - Atividades */
 
 get_header();
 

@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Parcerias */
+/*Template name: espiral-simbolica - Parcerias */
 
 get_header();
 

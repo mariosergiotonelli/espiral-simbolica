@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Lp Yoga */
+/*Template name: espiral-simbolica - Lp Yoga */
 get_header();
 
 ?>

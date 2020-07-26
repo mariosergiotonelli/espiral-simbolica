@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Quem Somos */
+/*Template name: espiral-simbolica - Quem Somos */
 
 get_header();
 

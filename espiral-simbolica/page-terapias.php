@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Terapias */
+/*Template name: espiral-simbolica - Terapias */
 
 get_header();
 

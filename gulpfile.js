@@ -7,10 +7,10 @@ var reload = browserSync.reload;
 
 
 // Sass caminho
-var scssPasta = ['espacocura/assets/sass/**/*.scss','espacocura/assets/sass/*.scss'];
+var scssPasta = ['espiral-simbolica/assets/sass/**/*.scss','espiral-simbolica/assets/sass/*.scss'];
 
 // CSS destino
-var cssDest = 'espacocura/assets/css/';
+var cssDest = 'espiral-simbolica/assets/css/';
 
 // Options for development
 var sassDevOptions = {
@@ -41,23 +41,21 @@ gulp.task('sassprod', function() {
 gulp.task('browser-sync', function() {
   var files = [
   //CSS
-    './espacocura/style.css',
-    './espacocura/assets/css/**/*.css',
-    './espacocura/assets/dist/*.css',
+    './espiral-simbolica/style.css',
+    './espiral-simbolica/assets/css/**/*.css',
+    './espiral-simbolica/assets/dist/*.css',
 
   //PHP
-    './espacocura**/*.php',
-    './espacocura/**/*.php',
+    './espiral-simbolica**/*.php',
+    './espiral-simbolica/**/*.php',
   //JS
-    './espacocura/assets/dist/*.js',
-    './espacocura/assets/js/*.js',
-    './espacocura/scripts/*.js'
+    './espiral-simbolica/assets/dist/*.js',
+    './espiral-simbolica/assets/js/*.js',
+    './espiral-simbolica/scripts/*.js'
   ];
 
-  ////----////
-
   browserSync.init(files, {
-    proxy:"http://localhost/Espaco-Cura/",
+    proxy:"http://localhost/Espiral-Simbolica/",
     watchEvents : ['change', 'add', 'unlink', 'addDir', 'unlinkDir'],
     notify:false
   });

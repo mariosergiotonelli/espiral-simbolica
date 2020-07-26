@@ -1,6 +1,6 @@
 <?php
 
-/*Template name: espacocura - Contato */
+/*Template name: espiral-simbolica - Contato */
 
 get_header();
 
