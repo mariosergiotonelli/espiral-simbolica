@@ -21,11 +21,23 @@
   <div class="wrap topo">
     <nav>
       <ul>
-        <li><a href="/#">Home</a></li>
-        <li><a href="/espaco">Espiral Simbólica</a></li>
-
-        <li><a href="/quem-somos/">Quem Somos</a></li>
-        <li><a href="/contato">Contato</a></li>
+        <li class="headerEspiral-menu"><a href="/#">Home</a></li>
+        <li class="headerEspiral-menu dropdown"><a href="/#">Espiral Simbólica</a>
+          <ul>
+            <li class="headerEspiral-menu__submenu"><a href="/#">Blog</a></li>
+          </ul>
+        </li>
+        <li class="headerEspiral-menu dropdown">
+          <a href="/#">Agende seu atendimento</a>
+          <ul>
+            <li class="headerEspiral-menu__submenu"><a href="#">Oráculos</a></li>
+            <li class="headerEspiral-menu__submenu"><a href="#">Terapias Holísticas</a></li>
+            <li class="headerEspiral-menu__submenu"><a href="#">Consultoria criativa</a></li>
+          </ul>
+        </li>
+        <li class="headerEspiral-menu"><a href="/#">Sobre</a></li>
+        <li class="headerEspiral-menu"><a href="/#">Eventos</a></li>
+        <li class="headerEspiral-menu"><a href="/#">Contato </a></li>
       </ul>
     </nav>
   </div>
