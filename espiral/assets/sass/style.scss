@@ -1,0 +1,25 @@
+@import "node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "node_modules/animate.css/animate.min.css";
+
+// Tools
+@import "tools/_fonts.scss";
+@import "tools/_mixins.scss";
+@import "tools/_variables.scss";
+
+// Layout
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
+
+// Paginas
+@import "paginas/_atividades.scss";
+@import "paginas/_contato.scss";
+@import "paginas/_espaco.scss";
+@import "paginas/_index.scss";
+@import "paginas/_lp-yoga.scss";
+@import "paginas/_parcerias.scss";
+@import "paginas/_quemSomos.scss";
+@import "paginas/_terapias.scss";
+
+// Componentes
+@import "componentes/popup.scss";

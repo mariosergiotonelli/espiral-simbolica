@@ -1,0 +1,78 @@
+.mainPageParcerias{
+  &-topo{
+    @extend .mainPageQuemSomos-topo;
+  }
+  &-titulo{
+    @include txtEspaco($fontTitulo, 400, 48px, $black, 40px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 26px;
+    }
+  }
+  &-subtitulo{
+    @include txtEspaco($fontTexto, 400, 18px, $black, 26px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  }
+  &-content{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0px;
+    width: 85%;
+    flex-wrap: wrap;
+    &__parceiros{
+      width: 210px;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      &-img{
+        background: black;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        margin:0 auto;
+        @include breakpoint($paisagem){
+          height: 150px;
+          width: 150px;
+        }
+      }
+      &-titulo{
+        @include txtEspaco($fontTitulo, 400, 22px, $black, 20px, center, initial);
+        margin: 20px 0 0;
+      }
+      &-redesSociais{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px 0 0;
+        width: 100%;
+        &__face{
+          background-image: url('../img/parceria/parceria-face.png');
+          width: 30px;
+          height: 30px;
+        }
+        &__twitter{
+          background-image: url('../img/parceria/parceria-twitter.png');
+          width: 30px;
+          height: 30px;
+        }
+        &__insta{
+          background-image: url('../img/parceria/parceria-insta.png');
+          width: 30px;
+          height: 30px;
+        }
+      }
+      a{
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &-bottom{
+    height: 15px;
+    background-image: linear-gradient(90deg, $yoga, $autoconhe, $sagrado);
+    margin-top: 30px;
+  }
+}

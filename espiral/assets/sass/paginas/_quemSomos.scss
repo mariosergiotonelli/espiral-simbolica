@@ -1,0 +1,86 @@
+.mainPageQuemSomos{
+  &-topo{
+    background: $black;
+    height: 70px;
+    width: 100%;
+    opacity: 0.5;
+    background-image: url('../img/topo-mandala.png');
+    margin-bottom: 50px;
+    @include breakpoint($celular){
+      display: none;
+    }
+  }
+  &-titulo{
+    @include txtEspaco($fontTitulo, 400, 48px, $black, 40px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 26px;
+    }
+  }
+  &-subtitulo{
+    @include txtEspaco($fontTexto, 400, 18px, $black, 26px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  }
+  &-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin: 50px 0 0;
+    @include breakpoint($paisagem){
+      flex-direction: column;
+      align-items: center;
+    }
+    &__servicos{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 100%;
+      @include breakpoint($paisagem){
+        width: 90%;
+        margin-bottom: 30px;
+      }
+      &-titulo{
+        @include txtEspaco($fontTitulo, 400, 22px, $black, 20px, center, initial);
+        margin: 20px 0 0;
+      }
+      &-img{
+        background: $black;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        background-size: cover;
+        @include breakpoint($paisagem){
+          height: 150px;
+          width: 150px;
+        }
+        &.denise{
+          background-image: url('../img/quem-somos/Denise.jpg');
+        }
+        &.raisa{
+          background-image: url('../img/quem-somos/Raisa.jpg');
+        }
+        &.raquel{
+          background-image: url('../img/quem-somos/Raquel.jpg');
+        }
+      }
+      &-texto{
+        @include txtEspaco($fontTexto, 400, 14px, $black, 18px, center, initial);
+        margin: 10px 0 0;
+        a{
+          color: $black;
+          &:hover{
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  &-bottom{
+    height: 15px;
+    background-image: linear-gradient(90deg, $yoga, $autoconhe, $sagrado);
+    margin-top: 30px;
+  }
+}

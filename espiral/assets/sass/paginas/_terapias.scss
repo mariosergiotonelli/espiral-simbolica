@@ -1,0 +1,73 @@
+.mainPageTerapias{
+  &-topo{
+    @extend .mainPageQuemSomos-topo;
+  }
+  &-titulo{
+    @include txtEspaco($fontTitulo, 400, 48px, $black, 40px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 26px;
+    }
+  }
+  &-subtitulo{
+    @include txtEspaco($fontTexto, 400, 18px, $black, 26px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  }
+  &-content{
+    &-terapias{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px auto 0;
+      width: 80%;
+      @include breakpoint($tablet){
+        width: 100%;
+      }
+      @include breakpoint($paisagem){
+        width: 95%;
+        flex-direction: column;
+      }
+      &__left{
+        width: 100%;
+        @include breakpoint($paisagem){
+          width: 100%;
+        }
+        &-titulo{
+          @include txtEspaco($fontTitulo, 400, 20px, $black, 20px, center, initial);
+          @include breakpoint($paisagem){
+            text-align: center;
+          }
+        }
+        &-texto{
+          @include txtEspaco($fontTexto, 400, 16px, $black, 20px, center, initial);
+          margin-top: 20px;
+          @include breakpoint($paisagem){
+            text-align: center;
+          }
+        }
+      }
+      &__right{
+        @include breakpoint($paisagem){
+          order: -1;
+        }
+        &-img{
+          border-radius: 50%;
+          width: 300px;
+          @include breakpoint($paisagem){
+            margin-bottom: 30px;
+          }
+          @include breakpoint($celular){
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+  &-bottom{
+    height: 15px;
+    background-image: linear-gradient(90deg, $yoga, $autoconhe, $sagrado);
+    margin-top: 30px;
+  }
+}

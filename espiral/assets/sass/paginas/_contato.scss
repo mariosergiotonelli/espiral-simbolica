@@ -1,0 +1,90 @@
+.mainPageContato{
+  &-topo{
+    @extend .mainPageQuemSomos-topo;
+  }
+  &-titulo{
+    @include txtEspaco($fontTitulo, 400, 48px, $black, 40px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 26px;
+    }
+  }
+  &-subtitulo{
+    @include txtEspaco($fontTexto, 400, 18px, $black, 26px, center, initial);
+    @include breakpoint($paisagem){
+      font-size: 16px;
+      margin: 0 10px;
+    }
+  }
+  &-content{
+    margin: 50px 0 0;
+    &__contatos{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      @include breakpoint($paisagem){
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      &-email, &-face, &-insta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        @include breakpoint($paisagem){
+          margin-bottom: 30px;
+        }
+        &__icon{
+          border-radius: 50%;
+          height: 100px;
+          margin: 0 auto;
+          width: 100px;
+        }
+        &__titulo{
+          @include txtEspaco($fontTitulo, 400, 16px, $black, 20px, center, initial);
+          margin: 10px 0 0;
+        }
+        &__texto{
+          @include txtEspaco($fontTexto, 400, 14px, $black, 18px, center, initial);
+          margin: 10px 0 0;
+        }
+        a{
+          text-decoration: none !important;
+        }
+      }
+      &-email{
+        &__icon{
+          background: url('../img/contato/icon-email.png') no-repeat center center, linear-gradient(180deg, $yoga 0%, $sagrado 50%, $autoconhe 100%);
+        }
+      }
+      &-face{
+        &__icon{
+          background: url('../img/contato/icon-face.png') no-repeat center center, linear-gradient(180deg, $yoga 0%, $sagrado 50%, $autoconhe 100%);
+        }
+      }
+      &-insta{
+        &__icon{
+         background: url('../img/contato/icon-insta.png') no-repeat center center, linear-gradient(180deg, $yoga 0%, $sagrado 50%, $autoconhe 100%);
+        }
+      }
+    }
+    &__mapa{
+      text-align: center;
+      margin: 50px auto 0;
+      display: block;
+      iframe{
+        @include breakpoint($tablet){
+          width: 100%
+        }
+        @include breakpoint($paisagem){
+          width: 90%
+        }
+      }
+    }
+  }
+  &-bottom{
+    height: 15px;
+    background-image: linear-gradient(90deg, $yoga, $autoconhe, $sagrado);
+    margin-top: 30px;
+  }
+}
