@@ -16,3 +16,17 @@
 <?php wp_head(); ?>
 </head>
 <body>
+
+<header class="headerEspiral">
+  <div class="wrap topo">
+    <nav>
+      <ul>
+        <li><a href="/#">Home</a></li>
+        <li><a href="/espaco">Espiral Simbólica</a></li>
+
+        <li><a href="/quem-somos/">Quem Somos</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,9 +1,6 @@
 body {
   .mainEspaco {
-    height: 100vh;
     overflow-x: hidden;
-    perspective: 4px;
-    transform-style: preserve-3d;
 
     .lateralEsquerda {
       background-image: url("../img/mandala_latera-direita.png");
